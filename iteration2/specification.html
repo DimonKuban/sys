@@ -391,3 +391,601 @@ Displays update or exit</td>
 <p>&nbsp;</p>
 <p>&nbsp;<strong>Successful Post-Conditions: </strong>client has got confirmation number and details about upcoming appointment, accept company policy and got important information about items that he/she should have for the appointment.</p>
 <p>&nbsp;</p>
+
+<p style="text-align: center;"><strong>Business Use Case Specifications</strong></p>
+<p><strong>Shinchul Jung</strong></p>
+<p><strong>UC3-FEES</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: The Medical consultation should be done.</p>
+<p>Rule 2: The paymentFees scenario is created.</p>
+<p>Rule 3: This action should be done on reception.</p>
+<p>Rule 4: The system should contain client information.</p>
+<p><strong>Description:</strong></p>
+<p>Client wants to pay fees.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Payment fees.</p>
+<p><strong>Preconditions: </strong></p>
+<p>Clients choose manually payment method and pay fees.</p>
+<table style="height: 260px; float: left;" border="2" width="501">
+<tbody>
+<tr>
+<td style="width: 118px;"><strong>Step#</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px;"><strong>Data Used</strong></td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>1</strong></td>
+<td style="width: 118px; text-align: left;">Select patient payment update</td>
+<td style="width: 118px;">
+<p>Displays patient UserID prompt</p>
+Request UserID</td>
+<td style="width: 119px;">UserID</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>2</strong></td>
+<td style="width: 118px;">&nbsp;Enter UserID</td>
+<td style="width: 118px;">&nbsp;Accepts enter</td>
+<td style="width: 119px;">&nbsp;
+<p>UserID</p>
+</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>3</strong></td>
+<td style="width: 118px;">Choose to continue</td>
+<td style="width: 118px;">Displays option of payment list</td>
+<td style="width: 119px;">&nbsp;PaymentOptionList</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>4</strong></td>
+<td style="width: 118px;">&nbsp;Select appointment details</td>
+<td style="width: 118px;">Accepts enter</td>
+<td style="width: 119px;">PaymentOption</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>5</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Choose to continue</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Displays the payment form</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>6</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Input payment amount</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Accepts enter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">Price</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>7</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Choose to continue</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Displays the discount option</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>8</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Enter discount code</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Accepts enter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>DiscountCode</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>9</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Choose to continue</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Validates DiscountCode</p>
+<p>Displays amount of payment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>10</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Confirm the payment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Prompts the user for receipt</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>11</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Select the option to receive the receipt</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Displays the order confirmation and sends the receipt via e-mail</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>12</strong></td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Select exit</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Displays the main menu</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>payment is successfully created.</p>
+<p>&nbsp;</p>
+
+
+<p style="text-align: left;">&nbsp;</p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: Appointment should exist.</p>
+<p>Rule 2: There is a request from client for receiving discount.</p>
+<p>Rule 3: Client has privileges to receive discount.</p>
+<p><strong>Description:</strong></p>
+<p>Client wants to get a discount.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Discount fees.</p>
+<p><strong>Preconditions: </strong></p>
+<p>Client choose manually what kind of fees he can apply.</p>
+<table style="height: 260px; float: left;" border="2" width="501">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Step#</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px; height: 15px;"><strong>Data Used</strong></td>
+</tr>
+<tr style="height: 35.9827px;">
+<td style="width: 118px; height: 35.9827px;"><strong>Loop</strong></td>
+<td style="width: 118px; text-align: left; height: 35.9827px;">&nbsp;</td>
+<td style="width: 118px; height: 35.9827px;">&nbsp;</td>
+<td style="width: 119px; height: 35.9827px;">&nbsp;</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 118px; height: 158px;"><strong>1</strong></td>
+<td style="width: 118px; height: 158px;">Select appointment</td>
+<td style="width: 118px; height: 158px;">
+<table>
+<tbody>
+<tr>
+<td width="303">
+<p>Display user upcoming appointments</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px; height: 158px;">AppointmentsList</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>2</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;
+<table>
+<tbody>
+<tr>
+<td width="139">
+<p>Select discount category</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px; height: 15px;">&nbsp;
+<table>
+<tbody>
+<tr>
+<td width="303">
+<p>Display available discount types and discount amount for selected appointment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px; height: 15px;">&nbsp;DiscountsList</td>
+</tr>
+<tr style="height: 186px;">
+<td style="width: 118px; height: 186px;"><strong>3</strong></td>
+<td style="width: 118px; height: 186px;">
+<table>
+<tbody>
+<tr>
+<td width="139">
+<p>Select confirm discount rules</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px; height: 186px;">
+<table>
+<tbody>
+<tr>
+<td width="303">
+<p>&nbsp;Display rules and necessary documents list which can be loaded online or shown during appointment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px; height: 186px;">
+<p>DocumentsList</p>
+</td>
+</tr>
+<tr style="height: 150px;">
+<td style="width: 118px; height: 150px;"><strong>End Loop</strong></td>
+<td style="width: 118px; height: 150px;">
+<table>
+<tbody>
+<tr>
+<td width="139">
+<p>Select exit</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 118px; height: 150px;">
+<table>
+<tbody>
+<tr>
+<td width="303">
+<p>Display main menu</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px; height: 150px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<strong>Successful Post-Conditions: </strong>user receive a discount for appointment(s).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>reservation is created to the schedule.</p>
+<p>&nbsp;<strong>Business rule(s):</strong></p>
+<p>Rule 1: The schedule must exist on the system.</p>
+<p>Rule 2: There is a request to change the schedule from the customer or Doctor.</p>
+<p>Rule 3: Both know there is a change for reservation.</p>
+<p>Rule 4: The Office staff is logged in and the system displays the booking menu.</p>
+<p>&nbsp;<strong>Description:</strong></p>
+<p>Update reservation schedule without error.</p>
+
+
+<p style="text-align: left;"><strong>Andrii Kosenko</strong></p>
+<p><strong>UC4-INFORMING</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: Appointment should be booked.</p>
+<p>Rule 2: Short description and status information of appointment must exist.</p>
+<p>Rule 3: Client should have preferred option of how to receive appointment information.</p>
+<p><strong>Description:</strong></p>
+<p>Client wants to get a discount.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Discount fees.</p>
+<p><strong>Preconditions: </strong></p>
+<p>Client choose manually what kind of fees he can apply.</p>
+<table style="height: 260px; float: left;" border="2" width="501">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Step#</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px; height: 15px;"><strong>Data Used</strong></td>
+</tr>
+<tr style="height: 35.9827px;">
+<td style="width: 118px; height: 35.9827px;"><strong>Loop</strong></td>
+<td style="width: 118px; text-align: left; height: 35.9827px;">&nbsp;</td>
+<td style="width: 118px; height: 35.9827px;">&nbsp;</td>
+<td style="width: 119px; height: 35.9827px;">&nbsp;</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 118px; height: 158px;"><strong>1</strong></td>
+<td style="width: 118px; height: 158px;">Select scheduled appointment</td>
+<td style="width: 118px; height: 158px;">Display scheduled appointment</td>
+<td style="width: 119px; height: 158px;">AppointmentList</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>2</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;Check Status</td>
+<td style="width: 118px; height: 15px;">&nbsp;Display status of selected appointment</td>
+<td style="width: 119px; height: 15px;">Status</td>
+</tr>
+<tr style="height: 186px;">
+<td style="width: 118px; height: 186px;"><strong>3</strong></td>
+<td style="width: 118px; height: 186px;">Select preferred option</td>
+<td style="width: 118px; height: 186px;">
+<p>Display default and preferred by user options of how he/she would like to receive information</p>
+</td>
+<td style="width: 119px; height: 186px;">
+<p>OptionInfo</p>
+<p>DefaultOption</p>
+<p>PreferedOption</p>
+<p>DataInfo</p>
+</td>
+</tr>
+<tr style="height: 150px;">
+<td style="width: 118px; height: 150px;"><strong>4</strong></td>
+<td style="width: 118px; height: 150px;">Send information to user</td>
+<td style="width: 118px; height: 150px;">
+<p>Display: &ldquo;Information has been sent successfully!&rdquo;</p>
+Check if message has been received by user.</td>
+<td style="width: 119px; height: 150px;">&nbsp;
+<p>UserId</p>
+<p>OptionInfo</p>
+DataInfo</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>End Loop</strong></td>
+<td style="width: 118px; height: 15px;">Select exit</td>
+<td style="width: 118px; height: 15px;">Display main menu</td>
+<td style="width: 119px; height: 15px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: &nbsp;</strong>client successfully received an Information about already booked appointment or any changing that has been applied.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>reservation is created to the schedule.</p>
+<p>&nbsp;<strong>Business rule(s):</strong></p>
+<p>Rule 1: The schedule must exist on the system.</p>
+<p>Rule 2: There is a request to change the schedule from the customer or Doctor.</p>
+<p>Rule 3: Both know there is a change for reservation.</p>
+<p>Rule 4: The Office staff is logged in and the system displays the booking menu.</p>
+<p>&nbsp;<strong>Description:</strong></p>
+<p>Update reservation schedule without error.</p>
+
+
