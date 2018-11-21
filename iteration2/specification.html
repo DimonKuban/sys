@@ -989,3 +989,152 @@ DataInfo</td>
 <p>Update reservation schedule without error.</p>
 
 
+<p><strong>Kazim Akhlaqi</strong></p>
+<p><strong>UC5-ANONYMOUSACCOUNT</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: The Customer must accept the Starbuds terms and conditions displayed at the time of creating an account.</p>
+<p>Rule 2: Customers must be at least 18 years old to create an account with Starbuds.</p>
+<p>Rule 3: Customers must not provide their personal information such as official name and email address for creating an account with Starbuds for their privacy protection.</p>
+<p><strong>Description:</strong></p>
+<p>Creation of anonymous account will help client to create fast user account without fill in required information.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Create anonymous user account.</p>
+<p><strong>Preconditions: </strong></p>
+<p>Client do need to share personal information while he can create an anonymous account.</p>
+<table style="height: 260px; float: left;" border="2" width="501">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Step#</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px; height: 15px;"><strong>Data Used</strong></td>
+</tr>
+<tr style="height: 35.9827px;">
+<td style="width: 118px; height: 35.9827px;"><strong>1</strong></td>
+<td style="width: 118px; text-align: left; height: 35.9827px;">&nbsp;Select login/create account</td>
+<td style="width: 118px; height: 35.9827px;">&nbsp;
+<p>If (Select == login)</p>
+<p>Authenticate customer account and and login to system</p>
+<p>Else if (Select == createAccount)</p>
+<p>Display Starbuds terms and condition</p>
+</td>
+<td style="width: 119px; height: 35.9827px;">&nbsp;
+<p>If (Select == login)</p>
+<p>Authenticate customer account and and login to system</p>
+</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 118px; height: 158px;"><strong>2</strong></td>
+<td style="width: 118px; height: 158px;">Select Agree/Disagree</td>
+<td style="width: 118px; height: 158px;">
+<p>If (disagree)</p>
+<p>Redirect Client to Step 1</p>
+Else continue to step 3</td>
+<td style="width: 119px; height: 158px;">termsAndConditions</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Loop</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;</td>
+<td style="width: 118px; height: 15px;">&nbsp;</td>
+<td style="width: 119px; height: 15px;">&nbsp;</td>
+</tr>
+<tr style="height: 186px;">
+<td style="width: 118px; height: 186px;"><strong>3</strong></td>
+<td style="width: 118px; height: 186px;">Select random username generator/ Provide Unique username</td>
+<td style="width: 118px; height: 186px;">
+<p>If (select == random)</p>
+<p>Create username</p>
+<p>Continue to Sept 4</p>
+<p>Else If (Select == ProivdedUsername)</p>
+<p>Check username for duplicates in system database</p>
+<p>If (ProivdedUsername == unique)</p>
+<p>Accept username</p>
+<p>Continue to Sept 4</p>
+<p>Else ask for unique username</p>
+</td>
+<td style="width: 119px; height: 186px;">
+<p>randomUserName</p>
+<p>ProivdedUsername</p>
+</td>
+</tr>
+<tr style="height: 150px;">
+<td style="width: 118px; height: 150px;"><strong>End Loop</strong></td>
+<td style="width: 118px; height: 150px;">&nbsp;</td>
+<td style="width: 118px; height: 150px;">
+<p>&nbsp;</p>
+</td>
+<td style="width: 119px; height: 150px;">&nbsp;</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>4</strong></td>
+<td style="width: 118px; height: 15px;">Select random email generator</td>
+<td style="width: 118px; height: 15px;">Use randomly generated username or username provided by Client to generate an email address with Starbuds domain name</td>
+<td style="width: 119px; height: 15px;">randomUserName</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>5</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;Select random password generator tab / provide own password</td>
+<td style="width: 118px; height: 15px;">&nbsp;
+<p>If (Select == random)</p>
+<p>Generate random password</p>
+<p>Else</p>
+Accept provided password</td>
+<td style="width: 119px; height: 15px;">&nbsp;
+<p>radomPassword</p>
+providedPassword</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>6</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;Select gender</td>
+<td style="width: 118px; height: 15px;">&nbsp;Display gender list</td>
+<td style="width: 119px; height: 15px;">&nbsp;genderList</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>the system created an anonymous account for customer base on the information provided by customer.</p>
