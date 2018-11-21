@@ -117,17 +117,6 @@ DrSchedule</td>
 
 
 <!--2-->
-<p style="text-align: center;">&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong>Business rule(s):</strong></p>
-<p>Rule 1: The schedule must exist on the system.</p>
-<p>Rule 2: There is a request to change the schedule from the customer or Doctor.</p>
-<p>Rule 3: Both know there is a change for reservation.</p>
-<p>Rule 4: The Office staff is logged in and the system displays the booking menu.</p>
-<p>&nbsp;</p>
-<p><strong>Description:</strong></p>
-<p>Update reservation schedule without error.</p>
-<p>&nbsp;</p>
 <p><strong>Scenario 2: &nbsp;</strong></p>
 <p>Update Schedule</p>
 <p>&nbsp;</p>
@@ -320,7 +309,7 @@ Displays update or exit</td>
 
 <!--PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP-->
 <!--4-->
-
+<br><br><br>
 <p style="text-align: center;"><strong>UC3-FEES</strong></p>
 
 <p><strong>Business rule(s):</strong></p>
@@ -530,28 +519,7 @@ Displays update or exit</td>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;<strong>Successful Post-Conditions: </strong>user receive a discount for appointment(s).</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong>Successful Post-Conditions: </strong>reservation is created to the schedule.</p>
-<p>&nbsp;<strong>Business rule(s):</strong></p>
-<p>Rule 1: The schedule must exist on the system.</p>
-<p>Rule 2: There is a request to change the schedule from the customer or Doctor.</p>
-<p>Rule 3: Both know there is a change for reservation.</p>
-<p>Rule 4: The Office staff is logged in and the system displays the booking menu.</p>
-<p>&nbsp;<strong>Description:</strong></p>
-<p>Update reservation schedule without error.</p>
+
 
 
 
@@ -652,3 +620,197 @@ DataInfo</td>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>Successful Post-Conditions: &nbsp;</strong>client successfully received an Information about already booked appointment or any changing that has been applied.</p>
+
+
+<!--PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP-->
+<!--7-->
+
+
+
+<p><br /><br /><br /></p>
+<p style="text-align: center;"><strong>UC5-ANONYMOUSACCOUNT</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: The Customer must accept the Starbuds terms and conditions displayed at the time of creating an account.</p>
+<p>Rule 2: Customers must be at least 18 years old to create an account with Starbuds.</p>
+<p>Rule 3: Customers must not provide their personal information such as official name and email address for creating an account with Starbuds for their privacy protection.</p>
+<p>&nbsp;</p>
+<p><strong>Description:</strong></p>
+<p>Creation of anonymous account will help client to create fast user account without fill in required information.</p>
+<p>&nbsp;</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Create anonymous user account.</p>
+<p>&nbsp;</p>
+<p><strong>Preconditions: </strong></p>
+<p>Client do need to share personal information while he can create an anonymous account.</p>
+<table style="height: 260px; float: left; width: 786px;" border="2">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Step#</strong></td>
+<td style="width: 130px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 330px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 208px; height: 15px;"><strong>Data Used</strong></td>
+</tr>
+<tr style="height: 35px;">
+<td style="width: 118px; height: 35px;"><strong>1</strong></td>
+<td style="width: 130px; text-align: left; height: 35px;">&nbsp;Select login/create account</td>
+<td style="width: 330px; height: 35px;">&nbsp;
+<p>If (Select == login)</p>
+<p>Authenticate customer account and and login to system</p>
+<p>Else if (Select == createAccount)</p>
+<p>Display Starbuds terms and condition</p>
+</td>
+<td style="width: 208px; height: 35px;">&nbsp;
+<p>If (Select == login)</p>
+<p>Authenticate customer account and and login to system</p>
+</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 118px; height: 158px;"><strong>2</strong></td>
+<td style="width: 130px; height: 158px;">Select Agree/Disagree</td>
+<td style="width: 330px; height: 158px;">
+<p>If (disagree)</p>
+<p>Redirect Client to Step 1</p>
+Else continue to step 3</td>
+<td style="width: 208px; height: 158px;">termsAndConditions</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Loop</strong></td>
+<td style="width: 130px; height: 15px;">&nbsp;</td>
+<td style="width: 330px; height: 15px;">&nbsp;</td>
+<td style="width: 208px; height: 15px;">&nbsp;</td>
+</tr>
+<tr style="height: 186px;">
+<td style="width: 118px; height: 186px;"><strong>3</strong></td>
+<td style="width: 130px; height: 186px;">Select random username generator/ Provide Unique username</td>
+<td style="width: 330px; height: 186px;">
+<p>If (select == random)</p>
+<p>Create username</p>
+<p>Continue to Sept 4</p>
+<p>Else If (Select == ProivdedUsername)</p>
+<p>Check username for duplicates in system database</p>
+<p>If (ProivdedUsername == unique)</p>
+<p>Accept username</p>
+<p>Continue to Sept 4</p>
+<p>Else ask for unique username</p>
+</td>
+<td style="width: 208px; height: 186px;">
+<p>randomUserName</p>
+<p>ProivdedUsername</p>
+</td>
+</tr>
+<tr style="height: 150px;">
+<td style="width: 118px; height: 150px;"><strong>End Loop</strong></td>
+<td style="width: 130px; height: 150px;">&nbsp;</td>
+<td style="width: 330px; height: 150px;">
+<p>&nbsp;</p>
+</td>
+<td style="width: 208px; height: 150px;">&nbsp;</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>4</strong></td>
+<td style="width: 130px; height: 15px;">Select random email generator</td>
+<td style="width: 330px; height: 15px;">Use randomly generated username or username provided by Client to generate an email address with Starbuds domain name</td>
+<td style="width: 208px; height: 15px;">randomUserName</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>5</strong></td>
+<td style="width: 130px; height: 15px;">&nbsp;Select random password generator tab / provide own password</td>
+<td style="width: 330px; height: 15px;">&nbsp;
+<p>If (Select == random)</p>
+<p>Generate random password</p>
+<p>Else</p>
+Accept provided password</td>
+<td style="width: 208px; height: 15px;">&nbsp;
+<p>radomPassword</p>
+providedPassword</td>
+</tr>
+<tr style="height: 72px;">
+<td style="width: 118px; height: 72px;"><strong>6</strong></td>
+<td style="width: 130px; height: 72px;">&nbsp;Select gender</td>
+<td style="width: 330px; height: 72px;">&nbsp;Display gender list</td>
+<td style="width: 208px; height: 72px;">&nbsp;genderList</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>7</strong></td>
+<td style="width: 130px; height: 15px;">Select random avatar generator / choose avatar</td>
+<td style="width: 330px; height: 15px;">
+<p>If (Select == random)</p>
+<p>Choose random avatar base on gender</p>
+<p>Else</p>
+Displays avatars list</td>
+<td style="width: 208px; height: 15px;">
+<p>avatarsList</p>
+<p>genderList</p>
+</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>8</strong></td>
+<td style="width: 130px; height: 15px;">Select create account / Cancel</td>
+<td style="width: 330px; height: 15px;">
+<p>If (Select == Cancel)</p>
+<p>Reset the form and</p>
+<p>Redirect user to step 1</p>
+<p>Else If (Select == createAccount)</p>
+Creates account/ Send a welcome message along with the account information to newly created customer email address and display account information on screen</td>
+<td style="width: 208px; height: 15px;">customerInformation</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>9</strong></td>
+<td style="width: 130px; height: 15px;">Select print Information / Cancel</td>
+<td style="width: 330px; height: 15px;">
+<p>If (select == print)</p>
+<p>Print account information)</p>
+<p>Else if (select == Cancel)</p>
+Redirect user to step 1</td>
+<td style="width: 208px; height: 15px;">customerInformation</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>the system created an anonymous account for customer base on the information provided by customer.</p>
