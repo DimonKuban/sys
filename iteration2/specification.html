@@ -58,7 +58,7 @@ Display create and return option.</td>
 <td style="width: 118px;">
 <p>Selects create reservation</p>
 </td>
-<td style="width: 118px;">Displays the monthly calendar for the reservation to select time</td>
+<td style="width: 118px;">Displays the monthly calendar for the reservation to select a&nbsp;time</td>
 <td style="width: 119px;">&nbsp;</td>
 </tr>
 <tr>
@@ -82,3 +82,312 @@ DrSchedule</td>
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>reservation is created to the schedule.</p>
+<p>&nbsp;<strong>Business rule(s):</strong></p>
+<p>Rule 1: The schedule must exist on the system.</p>
+<p>Rule 2: There is a request to change the schedule from the customer or Doctor.</p>
+<p>Rule 3: Both know there is a change for reservation.</p>
+<p>Rule 4: The Office staff is logged in and the system displays the booking menu.</p>
+<p>&nbsp;<strong>Description:</strong></p>
+<p>Update reservation schedule without error.</p>
+
+
+
+
+
+
+<p><strong>Scenario 2: &nbsp;</strong></p>
+<p>Update Schedule</p>
+<p><strong>Preconditions: </strong></p>
+<p>When appointment is scheduled, and Doctor or Client wants to change it.</p>
+<table style="height: 260px; float: left; width: 497px;" BORDER="2">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>Step#</strong></td>
+<td style="width: 118px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 150.625px; height: 15px;"><strong>Actor (Client)</strong></td>
+<td style="width: 86.375px; height: 15px;"><strong>Data Used</strong></td>
+</tr>
+<tr style="height: 40px;">
+<td style="width: 118px; height: 40px;"><strong>Loop</strong></td>
+<td style="width: 118px; text-align: left; height: 40px;">&nbsp;</td>
+<td style="width: 150.625px; height: 40px;">&nbsp;</td>
+<td style="width: 86.375px; height: 40px;">&nbsp;</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 118px; height: 158px;"><strong>1</strong></td>
+<td style="width: 118px; height: 158px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Selects the Booking Schedule option</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 150.625px; height: 158px;">
+<table>
+<tbody>
+<tr>
+<td>
+<p>Displays a list of reservation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 86.375px; height: 158px;">
+<p>BookingSchedule</p>
+</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 118px; height: 15px;"><strong>2</strong></td>
+<td style="width: 118px; height: 15px;">&nbsp;
+<table>
+<tbody>
+<tr>
+<td>
+<p>Selects a date.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 150.625px; height: 15px;">&nbsp;Displays time slots. Prompts to update existing reservation.</td>
+<td style="width: 86.375px; height: 15px;">&nbsp;
+<p>BookingSchedule</p>
+</td>
+</tr>
+<tr style="height: 186px;">
+<td style="width: 118px; height: 186px;"><strong>3</strong></td>
+<td style="width: 118px; height: 186px;">Selects update</td>
+<td style="width: 150.625px; height: 186px;">
+<p>Displays monthly calendar to show availability</p>
+</td>
+<td style="width: 86.375px; height: 186px;">
+<p>BookingSchedule</p>
+<p>DrSchedule</p>
+</td>
+</tr>
+<tr style="height: 150px;">
+<td style="width: 118px; height: 150px;"><strong>4</strong></td>
+<td style="width: 118px; height: 150px;">
+<p>Selects a date</p>
+</td>
+<td style="width: 150.625px; height: 150px;">
+<p>Displays the selected date and time slot to confirm and cancel the update</p>
+</td>
+<td style="width: 86.375px; height: 150px;">BookingSchedule</td>
+</tr>
+<tr style="height: 86px;">
+<td style="width: 118px; height: 86px;"><strong>5</strong></td>
+<td style="width: 118px; height: 86px;">
+<p>Selects confirm</p>
+</td>
+<td style="width: 150.625px; height: 86px;">
+<p>Sends confirmation email to the customer and Dr. Sidhu</p>
+<p>Updates the schedule</p>
+<p>Redisplays the weekly schedule and time for the reservation.</p>
+Displays update or exit</td>
+<td style="width: 86.375px; height: 86px;">&nbsp;BookingSchedule</td>
+</tr>
+<tr style="height: 48.7259px;">
+<td style="width: 118px; height: 48.7259px;"><strong>End loop</strong></td>
+<td style="width: 118px; height: 48.7259px;">Selects exit</td>
+<td style="width: 150.625px; height: 48.7259px;">
+<p>Displays main menu.</p>
+</td>
+<td style="width: 86.375px; height: 48.7259px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Successful Post-Conditions: </strong>reservation is updated for the selected date and time.</p>
+
+<p style="text-align: center;"><strong>Business Use Case Specifications</strong></p>
+<p style="text-align: left;"><strong>Dmitrii Korolevskii</strong></p>
+<p><strong>UC2-CONFIRMATION</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1: Appointment should exist.</p>
+<p>Rule 2: There should be 2 days between now and appointment day.</p>
+<p>Rule 3: The system should contain client information.</p>
+<p><strong>Description:</strong></p>
+<p>Client receive details about confirmation of an appointment.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Confirm appointment.</p>
+<p><strong>Preconditions: </strong></p>
+<p>Client wants to confirm booked appointment.</p>
+<table style="height: 260px; float: left;" border="2" width="501">
+<tbody>
+<tr>
+<td style="width: 118px;"><strong>Step#</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px;"><strong>Data Used</strong></td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>1</strong></td>
+<td style="width: 118px; text-align: left;">Select a language</td>
+<td style="width: 118px;">
+<table>
+<tbody>
+<tr>
+<td width="256">
+<p>Display languages available options.</p>
+<p>Default - English</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">LanguageList</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>Loop</strong></td>
+<td style="width: 118px;">&nbsp;</td>
+<td style="width: 118px;">&nbsp;</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>2</strong></td>
+<td style="width: 118px;">&nbsp;Select general appointment information</td>
+<td style="width: 118px;">&nbsp;
+<table>
+<tbody>
+<tr>
+<td width="256">
+<p>Display information about upcoming appointment, including location, date, time, estimated price, doctor name</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 119px;">&nbsp;AppointmentInfo</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>3</strong></td>
+<td style="width: 118px;">&nbsp;Select appointment details</td>
+<td style="width: 118px;">&nbsp;Display information about items that patient should have when coming to appointment</td>
+<td style="width: 119px;">&nbsp;RequiredItemsList</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>4</strong></td>
+<td style="width: 118px;">&nbsp;Select confirm booking acknowledgment</td>
+<td style="width: 118px;">&nbsp;Display company polic, including cancelling and penalties for not showing up</td>
+<td style="width: 119px;">&nbsp;PolicyInfo</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>5</strong></td>
+<td style="width: 118px;">&nbsp;Select confirm</td>
+<td style="width: 118px;">&nbsp;Display confirmation number along with short booking information</td>
+<td style="width: 119px;">&nbsp;ConfirmationDetails</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>End Loop</strong></td>
+<td style="width: 118px;">&nbsp;Select exit</td>
+<td style="width: 118px;">&nbsp;Display main menu</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<strong>Successful Post-Conditions: </strong>client has got confirmation number and details about upcoming appointment, accept company policy and got important information about items that he/she should have for the appointment.</p>
+<p>&nbsp;</p>
