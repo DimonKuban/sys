@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- Change Team Number and Name below to your team's number and name -->
+    <title>SYS366: Team Number: Name - Students</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="sys366.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	    <div class="navbar-header">
+		<a class="navbar-brand" href="#">SYS366</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+		<li><a href="#st1">Hyeonjin Jun</a></li>
+		<li><a href="#st2">Yirae Kim </a></li>
+		<li><a href="#st3">Sang Jun Park </a></li>
+		<li><a href="#st4">Brandon Rychlowski </a></li>
+		<li><a href="https://zenit.senecac.on.ca/~sys366_182b01/">To Team &#10148;</a></li>
+		<!-- other: &raquo;  &#10151; &#8594; -->
+
+	    </ul>
+	</div>
+    </nav>
+
+    <p class="instructions">This file is students.html</p>
+    <!-- Change Team Number and Name below to your team's number and name -->
+    <div class="header">
+	<h1>Team Number 1: Avengers</h1>
+    </div>
+
+    <a id="st1" name="st1"></a>
+    <div class="studentArea">
+	<!-- Replace "Student Name 1" with the first student's full name and email address with Seneca email address -->
+	<h2>Hyeonjin Jun </h2><a href="mailto://hjun5@myseneca.ca" class="email">hjun5@myseneca.ca</a>
+	<table class="table table-hover">
+	    <thead>
+		<tr>
+		    <th>Submission</th>
+		    <th>Version</th>
+		    <th>Date</th>
+		</tr>
+	    </thead>
+			<tbody>
+				<tr>
+					<td>
+					<a href="hjun/Business_Processes.doc">Business Processes</a>
+					</td>
+					<td>1.0</td>
+					<td>06/1/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Processes_1_1.doc">Business Processes</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.1</td>
+					<td>06/10/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Diagram.uml">Business Use Case Diagram</a>
+					</td>
+					<td>1.0</td>
+					<td>06/1/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Diagram_v1_1.uml">Business Use Case Diagram</a>
+					</td>
+					<td>1.1</td>
+					<td>06/10/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Diagram_v2_0.uml">Business Use Case Diagram</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>2.0</td>
+					<td>06/11/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Track_Tools.doc">Business Use Case Track Tools</a>
+					</td>
+					<td>1.0</td>
+					<td>06/01/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Track_Tools_v1_1.doc">Business Use Case Track Tools</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.1</td>
+					<td>06/10/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Hire_Local_Shop.doc">Business Use Case Hire Local Shop</a>
+					</td>
+					<td>1.0</td>
+					<td>06/01/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Hire_Local_Shop_v1_1.doc">Business Use Case Hire Local Shop</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.1</td>
+					<td>06/10/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Order_Products.doc">Business Use Case Order Products</a>
+					</td>
+					<td>1.0</td>
+					<td>06/01/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/Business_Use_Case_Order_Products_v1_1.doc">Business Use Case Order Products</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.1</td>
+					<td>06/10/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/StakeholderNeeds_1.docx">Stakeholder Needs Work sheet</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.0</td>
+					<td>06/19/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/SUC_v1.uml">System Use Case Diagram</a>
+					</td>
+					<td>1.0</td>
+					<td>07/08/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/SUC_v2.uml">System Use Case Diagram</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>2.0</td>
+					<td>07/27/2018</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="hjun/CasualUseCase.docx">Casual Use Case</a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> Latest
+					  </button>
+					</td>
+					<td>1.0</td>
+					<td>07/27/2018</td>
+				</tr>
+			</tbody>
+	</table>
+	<p class="toTop"><a href="#top">To Top</a></p>
+    </div>
+
+
+    <a id="st2" name="st2"></a>
+    <div class="studentArea">
+	<!-- Replace "Student Name 2" with the first student's full name and email address with Seneca email address -->
+	<h2>Yirae Kim</h2><a href="mailto://ykim204@myseneca.ca" class="email">ykim204@myseneca.ca</a>
+	<table class="table table-hover">
+	    <thead>
+		<tr>
+		    <th>Submission</th>
+		    <th>Version</th>
+		    <th>Date</th>
+		</tr>
+	    </thead>
+	    <tbody>
+			<tr>
+				<td>
+				<a href="yirae/StaNeeds_1.docx">Stakeholders Needs</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>1.0</td>
+				<td>6/18/2018</td>
+			</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online_buc.docx">Business Use Case Making Web Mall</a>
+		    </td>
+		    <td>1.0</td>
+		    <td>6/1/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online_buc_2.docx">Business Use Case Making Web Mall</a>
+		    </td>
+		    <td>2.0</td>
+		    <td>6/2/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online_buc_3.docx">Business Use Case Making Web Mall</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>3.0</td>
+		    <td>6/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online2_buc.docx">Business Use Case Delivery</a>
+		    </td>
+		    <td>1.0</td>
+		    <td>6/1/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online2_buc_2.docx">Business Use Case Delivery</a>
+		    </td>
+		    <td>2.0</td>
+		    <td>6/2/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online2_buc_3.docx">Business Use Case Delivery</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>3.0</td>
+		    <td>6/10/2018</td>
+		</tr>
+		
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online3_buc.docx">Business Use Case Create payment</a>
+		    </td>
+		    <td>1.0</td>
+		    <td>6/1/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online3_buc_2.docx">Business Use Case Create payment</a>
+		    </td>
+		    <td>2.0</td>
+		    <td>6/2/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_online3_buc_3.docx">Business Use Case Create payment</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>3.0</td>
+		    <td>6/10/2018</td>
+		</tr>
+	
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_BP.doc">Business Process</a>
+		    </td>
+		    <td>1.0</td>
+		    <td>6/1/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_BP_2.doc">Business Process</a>
+		    </td>
+		    <td>2.0</td>
+		    <td>6/2/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/yiraekim_BP_3.doc">Business Process</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+			<td>3.0</td>
+			
+		    <td>6/10/2018</td>
+		</tr>
+	
+		
+		<tr>
+		    <td>
+			<a href="yirae/storemanagement.uml" download>Store Management BUC Diagram UML</a>
+		    </td>
+		    <td>1.0</td>
+		    <td>6/1/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/storemanagement_2.uml" download>Store Management BUC Diagram UML</a>
+		    </td>
+		    <td>2.0</td>
+		    <td>6/2/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/storemanagement_3.uml" download>Store Management BUC Diagram UML</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>3.0</td>
+		    <td>6/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/w9/ProductCustomer_1.uml" download>System Use Case Diagram</a>
+		
+		    </td>
+			<td>1.0</td>
+			
+		    <td>7/8/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/w9/ProductCustomer_1.uml" download>System Use Case Diagram</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+			<td>2.0</td>
+			
+		    <td>7/12/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/productOrder.docx" download>Casual Use Case Specification : ProductOrder </a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+			<td>1.0</td>
+			
+		    <td>7/27/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="yirae/customerMaintain.docx" download>Casual Use Case Specification : MaintainCustomer</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+			<td>1.0</td>
+			
+		    <td>7/27/2018</td>
+		</tr>
+	    </tbody>
+	</table>
+	<p class="toTop"><a href="#top">To Top</a></p>
+    </div>
+
+
+    <a id="st3" name="st3"></a>
+    <div class="studentArea">
+	<!-- Replace "Student Name 3" with the first student's full name and email address with Seneca email address -->
+	<h2>Sang Jun Park</h2><a href="mailto://sjpark24@myseneca.ca" class="email">sjpark24@myseneca.ca</a>
+	<table class="table table-hover">
+	    <thead>
+		<tr>
+		    <th>Submission</th>
+		    <th>Version</th>
+		    <th>Date</th>
+		</tr>
+	    </thead>
+	    <tbody>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_BusinessProcesses_1.0.doc">Business Processes</a>
+				</td>
+				<td>1.0</td>
+				<td>06/01/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_BusinessProcesses_2.0.doc">Business Processes</a>
+				</td>
+				<td>2.0</td>
+				<td>06/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_BusinessProcesses_3.0.doc">Business Processes</a>
+				</td>
+				<td>3.0</td>
+				<td>06/10/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/4.0/EmployeeRelations_BusinessProcesses_4.0.doc">Business Processes</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>4.0</td>
+				<td>06/11/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_BUCDiagramUML_1.0.uml" download>Business Use Case - Diagram UML</a>
+				</td>
+				<td>1.0</td>
+				<td>06/05/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_BUCDiagramUML_2.0.uml" download>Business Use Case - Diagram UML</a>
+				</td>
+				<td>2.0</td>
+				<td>06/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_BUCDiagramUML_3.0.uml" download>Business Use Case - Diagram UML</a>
+
+				</td>
+				<td>3.0</td>
+				<td>06/10/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/4.0/EmployeeRelations_BUCDiagramUML_4.0.uml" download>Business Use Case - Diagram UML</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>4.0</td>
+				<td>06/11/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_Hire_BUC_1.0.doc">Business Use Case - HireEmployees</a>
+				</td>
+				<td>1.0</td>
+				<td>06/05/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_Hire_BUC_2.0.doc">Business Use Case - HireEmployees</a>
+				</td>
+				<td>2.0</td>
+				<td>06/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_Hire_BUC_3.0.doc">Business Use Case - HireEmployees</a>
+				</td>
+				<td>3.0</td>
+				<td>06/10/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/4.0/EmployeeRelations_HireStoreOfficeStaffs_BUC_4.0.doc">Business Use Case - HireStoreOfficeStaffs</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>4.0</td>
+				<td>06/11/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_LayOff_BUC_1.0.doc">Business Use Case - LayOffSeasonalStaffs</a>
+				</td>
+				<td>1.0</td>
+				<td>06/05/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_LayOff_BUC_2.0.doc">Business Use Case - LayOffSeasonalStaffs</a>
+				</td>
+				<td>2.0</td>
+				<td>06/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_LayOff_BUC_3.0.doc">Business Use Case - LayOffSeasonalStaffs</a>
+				<td>3.0</td>
+				<td>06/10/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/4.0/EmployeeRelations_LayOffSeasonalStaffs_BUC_4.0.doc">Business Use Case - LayOffSeasonalStaffs</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>4.0</td>
+				<td>06/11/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_Report_BUC_1.0.doc">Business Use Case - ReportPayrollandTax</a>
+				</td>
+				<td>1.0</td>
+				<td>06/05/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_SendPayroll_BUC_2.0.doc">Business Use Case - SendPayrollToEmployees</a>
+				</td>
+				<td>2.0</td>
+				<td>06/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_SubmitPayrollAndTaxToPayrollCompany_BUC_3.0.doc">Business Use Case - SubmitPayrollAndTaxToPayrollCompany</a>
+				</td>
+				<td>3.0</td>
+				<td>06/10/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/4.0/EmployeeRelations_SubmitPayrollAndTaxToPayrollCompany_BUC_4.0.doc">Business Use Case - SubmitPayrollAndTaxToPayrollCompany</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>4.0</td>
+				<td>06/11/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/StakeholderNeedsWorksheet1.0.docx">Stakeholder Needs Work sheet</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>1.0</td>
+				<td>06/18/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/1.0/EmployeeRelations_SUCDiagramUML_1.0.uml" download>System Use Case Diagram</a>
+				</td>
+				<td>1.0</td>
+				<td>07/08/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/2.0/EmployeeRelations_SUCDiagramUML_2.0.uml" download>System Use Case Diagram</a>
+				</td>
+				<td>2.0</td>
+				<td>07/13/2018</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="sjpark/3.0/EmployeeRelations_SUCDiagramUML_3.0.uml" download>System Use Case Diagram</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				  </button>
+				</td>
+				<td>3.0</td>
+				<td>07/16/2018</td>
+			</tr>
+			 <tr>
+
+                <td>
+
+                <a href="sjpark/1.0/CasualUseCase_Maintatin_Employee_1.0.docx" download>CasualUseCase Maintatin Employee</a>
+
+                <button type="button" class="btn btn-default btn-sm">
+
+                    <span class="glyphicon glyphicon-asterisk"></span> Latest
+
+                 </button>
+
+                </td>
+
+                <td>1.0</td>
+
+                <td>07/27/2018</td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                <a href="sjpark/1.0/CasualUseCase_Manage_Schedule_1.0.docx" download>CasualUseCase Manage Schedule</a>
+
+                <button type="button" class="btn btn-default btn-sm">
+
+                    <span class="glyphicon glyphicon-asterisk"></span> Latest
+
+                 </button>
+
+                </td>
+
+                <td>1.0</td>
+
+                <td>07/27/2018</td>
+
+            </tr>
+
+			</tbody>
+	</table>
+	<p class="toTop"><a href="#top">To Top</a></p>
+    </div>
+
+
+    <a id="st4" name="st4"></a>
+    <div class="studentArea">
+	<!-- Replace "Student Name 4" with the first student's full name and email address with Seneca email address -->
+	<h2>Brandon Rychlowski</h2>
+	<a href="mailto://brychlowski@myseneca.ca" class="email"> brychlowski@myseneca.ca  </a>
+	<table class="table table-hover">
+	    <thead>
+		<tr>
+		    <th>Submission</th>
+		    <th>Version</th>
+		    <th>Date</th>
+		</tr>
+	    </thead>
+	    <tbody>
+		<tr>
+		    <td>
+			<a href="brandon/Business Processes.doc">Business Processes</a>
+	     
+		    </td>
+		    <td>1.0</td>
+		    <td>06/01/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Processes 2.0.doc">Business Processes</a>
+			<button type="button" class="btn btn-default btn-sm">
+				 <span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>2.0</td>
+		    <td>06/18/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Use Case - Order Products.doc">Business Use Case - Order Products</a>
+			
+		    </td>
+		    <td>1.0</td>
+		    <td>06/01/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Order Products 2.0.doc">Business Use Case - Order Products</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>2.0</td>
+		    <td>06/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Use Case - Products on Sale.doc">Business Use Case - Products on Sale</a>
+		
+		    </td>
+		    <td>1.0</td>
+		    <td>06/01/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Products on Sale 2.0.doc">Business Use Case - Products on Sale</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>2.0</td>
+		    <td>06/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Use Case - Take Inventory.doc">Business Use Case - Take Inventory</a>
+			
+		    </td>
+		    <td>1.0</td>
+		    <td>06/01/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Take Inventory 2.0.doc">Business Use Case - Take Inventory</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>2.0</td>
+		    <td>06/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Use Case - Brandon Rychlowski.uml">Business Use Case Diagram</a>
+			
+		    </td>
+		    <td>1.0</td>
+		    <td>06/01/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Business Use Case 2.0 - Brandon Rychlowski.uml">Business Use Case Diagram</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			  </button>
+		    </td>
+		    <td>2.0</td>
+		    <td>06/10/2018</td>
+		</tr>
+		<tr>
+		    <td>
+			<a href="brandon/Stakeholder Needs.docx">Stakeholder Needs</a>
+			<button type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-asterisk"></span> Latest
+			</button>
+		    </td>
+		    <td>1.0</td>
+		    <td>06/18/2018</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="brandon/InventoryManagementDiagram.uml">System Use Diagram</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				</button>
+			</td>
+			<td>1.0</td>
+			<td>07/08/2018</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="brandon/SystemUseCases - Brychlowski.docx">System Use Cases</a>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-asterisk"></span> Latest
+				</button>
+			</td>
+			<td>1.0</td>
+			<td>07/24/2018</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="brandon/Use Case - ReceiveInventory.docx">System Use Case - Receive Inventory</a>
+			</td>
+			<td>2.0</td>
+			<td>07/27/2018</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="brandon/Use Case - MaintainProductList.docx">System Use Case - Maintain Product List</a>
+			</td>
+			<td>2.0</td>
+			<td>07/27/2018</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="brandon/Iteration2/InventoryManagementDiagram 2.0.uml">System Use Case Diagram</a>
+			</td>
+			<td>2.0</td>
+			<td>07/27/2018</td>
+		</tr>
+	    </tbody>
+	</table>
+	<p class="toTop"><a href="#top">To Top</a></p>
+    </div>
+
+
+
+
+</body>
+
+</html>

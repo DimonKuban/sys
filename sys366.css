@@ -1,0 +1,123 @@
+/* 
+
+This file contains the CSS required for the SYS366 zenit accounts.  Do not modify this file.
+
+
+
+
+*/
+
+body {
+    font-family: Helvetica, Arial, sans_serif;
+    font-weight: normal;
+    padding: 24px;
+}
+
+p.instructions {
+    font-style: italic;
+    padding: 4px 2px;
+    text-align: right;
+}
+
+h1 {
+    display: inline;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0.4em 0 0.2em 0.1em;
+    line-height: 1.2em;
+}
+
+h2 {
+    display: inline;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 0 0 0.2em 0.2em;
+}
+
+a.email {
+    margin: 0 18px;
+    padding: 2px 4px;
+    color: #22a;
+}
+
+a.email:hover {
+    background-color: #ddf;
+}
+
+.projectComponent,
+.studentArea {
+    /*border: 2px solid #999;*/
+    background-color: rgb(214, 214, 214);
+    clear: both;
+    padding: 6px;
+    margin: 0 0 2em 0;
+    -moz-border-radius: 0 36px 0 0;
+    -webkit-border-radius: 0 36px 0 0;
+    border-radius: 0 36px 0 0;
+    /* future proofing */
+    -khtml-border-radius: 0 36px 0 0;
+    /* for old Konqueror browsers */
+}
+
+p.toTop {
+    text-align: right;
+    margin: 0.2em;
+    font-size: 0.9em;
+}
+
+thead {
+    font-weight: bold;
+}
+.projectComponent .tableWth {
+    width: 500px;
+    table-layout: fixed;
+}
+
+span.toTop {
+    text-align: right;
+    margin: 0.2em;
+    font-size: 10px;
+    width: 30%
+}
+.header nav {
+    float: left;
+    width: 30%;
+    height: 200px;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    height: 200px;
+    width: 70%;
+    background-color: #f1f1f1;
+    border-right: 1px solid gray;
+    padding: 30px;
+    
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.stakeTable {
+    border: 1px solid gray;
+}
+
