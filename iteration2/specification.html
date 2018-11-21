@@ -1,0 +1,84 @@
+<p style="text-align: center;"><strong>Business Use Case Specifications</strong></p>
+<p style="text-align: left;"><strong>Seungmin Yun</strong></p>
+<p style="text-align: left;"><strong>UC1-SCHEDULE</strong></p>
+<p><strong>Business rule(s):</strong></p>
+<p>Rule 1<strong>:</strong> The Client must be in the store</p>
+<p><strong>Description:</strong></p>
+<p>Create booking Schedule without error.</p>
+<p><strong>Scenario 1: &nbsp;</strong></p>
+<p>Create Schedule.</p>
+<p><strong>Preconditions: </strong></p>
+<p style="text-align: left;">Client asks for a consultation.</p>
+<table style="height: 260px; float: left;" BORDER="2" width="501">
+<tbody>
+<tr>
+<td style="width: 118px;"><strong>Step#</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 118px;"><strong>Actor (Client)</strong></td>
+<td style="width: 119px;"><strong>Data Used</strong></td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>1</strong></td>
+<td style="width: 118px; text-align: left;">Selects language option</td>
+<td style="width: 118px;">Displays a list of languages. Default is English.</td>
+<td style="width: 119px;">LanguageList</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>2</strong></td>
+<td style="width: 118px;">Selects an avatar</td>
+<td style="width: 118px;">Displays various of avatars. Display confirmation console to choose purchasing or consultation option.</td>
+<td style="width: 119px;">AvatarList</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>Loop</strong></td>
+<td style="width: 118px;">&nbsp;</td>
+<td style="width: 118px;">&nbsp;</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>3</strong></td>
+<td style="width: 118px;">Selects consultation</td>
+<td style="width: 118px;">
+<p>Displays information about how consultation works, fees and types.</p>
+First type is clinical trial. The other is others.</td>
+<td style="width: 119px;">
+<p>Consult_Desc</p>
+Consult_Type</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>4</strong></td>
+<td style="width: 118px;">Selects the clinical trial</td>
+<td style="width: 118px;">
+<p>Display clinical trial information to understand what this is.</p>
+Display create and return option.</td>
+<td style="width: 119px;">Clinical_Desc</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>5</strong></td>
+<td style="width: 118px;">
+<p>Selects create reservation</p>
+</td>
+<td style="width: 118px;">Displays the monthly calendar for the reservation to select time</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>6</strong></td>
+<td style="width: 118px;">Selects a day and a time slot</td>
+<td style="width: 118px;">
+<p>Validates that the selected time slot and day are empty.</p>
+<p>Validates Doctor is available</p>
+<p>Data is valid, then a reservation is created to the schedule</p>
+<p>Display confirmation console to store reservation data on the system.</p>
+Display options to create another reservation or return menu</td>
+<td style="width: 119px;">
+<p>BookingSchedule</p>
+DrSchedule</td>
+</tr>
+<tr>
+<td style="width: 118px;"><strong>End loop</strong></td>
+<td style="width: 118px;">Selects exit</td>
+<td style="width: 118px;">Displays the menu</td>
+<td style="width: 119px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
